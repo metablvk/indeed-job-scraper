@@ -7,3 +7,10 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
   res.setHeader('Content-Type', 'application/json');
   res.send("Job's API routes");
 }
+
+export const config = {
+  api: {
+    // disables call to body parsing module
+    bodyParser: false,
+  },
+};
