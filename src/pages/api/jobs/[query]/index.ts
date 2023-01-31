@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { getJobsList, release } from 'indeed-job-scraper';
 import { Data } from '@/types/Data.types';
-
+import 'puppeteer-extra-plugin-stealth/evasions/chrome.app';
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   /**
    * api/jobs/:query api route
