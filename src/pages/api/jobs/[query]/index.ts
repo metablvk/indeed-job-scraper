@@ -21,6 +21,7 @@ import 'puppeteer-extra-plugin-stealth/evasions/webgl.vendor';
 import 'puppeteer-extra-plugin-stealth/evasions/window.outerdimensions';
 import 'puppeteer-extra-plugin-user-preferences';
 import 'puppeteer-extra-plugin-user-data-dir';
+import { executablePath } from 'puppeteer';
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   /**
