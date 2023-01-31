@@ -24,10 +24,3 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     res.json(data);
   });
 }
-
-export const config = {
-  api: {
-    // disables call to body parsing module
-    bodyParser: false,
-  },
-};
