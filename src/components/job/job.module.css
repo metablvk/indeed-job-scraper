@@ -1,0 +1,46 @@
+.job {
+  padding: 2.4rem;
+  margin-top: 2.4rem;
+  background: #eeeeee;
+  border-radius: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.job_title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+
+.company_info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.job_info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.job_info p:last-of-type {
+  width: 100%;
+  margin-top: 1.2rem;
+}
+
+.view_job {
+  border: 0.1rem solid #06113c;
+  background: none;
+  color: #06113c;
+  padding: 0.8rem 2rem;
+  transition: 0.4s;
+  font-weight: 600;
+  border-radius: 0.4rem;
+}
+
+.view_job:hover {
+  background: #06113c;
+  color: #fff;
+}

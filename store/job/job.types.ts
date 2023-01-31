@@ -1,0 +1,3 @@
+export const JOB_ACTION_TYPES = {
+  SET_CURRENT_JOB: 'job/SET_CURRENT_JOB',
+};
