@@ -1,7 +1,8 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import { getJobsList, release } from 'indeed-job-scraper';
+import { getJobsList, config } from 'indeed-job-scraper';
 import type { Data } from '@/types/Data.types';
 
+config['base-URL'] = 'https://ca.indeed.com/';
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   /**
    * api/jobs/:query/:location/:level api route
