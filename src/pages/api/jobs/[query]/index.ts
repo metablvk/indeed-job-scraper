@@ -3,7 +3,7 @@ import { getJobsList, release } from 'indeed-job-scraper';
 import { Data } from '@/types/Data.types';
 import 'puppeteer-extra-plugin-stealth/evasions/chrome.app';
 import 'puppeteer-extra-plugin-stealth/evasions/chrome.csi';
-
+import 'puppeteer-extra-plugin-stealth/evasions/chrome.loadTimes';
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
   /**
    * api/jobs/:query api route
