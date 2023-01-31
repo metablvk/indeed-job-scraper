@@ -43,19 +43,22 @@ const JobForm = () => {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     const url = buildUrl();
-    axios.get(url).then((res) => {
-      const updatedData = res.data.map((item: any) => ({
-        companyLocation: item['company-location'],
-        companyName: item['company-name'],
-        companyRating: item['company-rating'],
-        jobLink: item['job-link'],
-        jobSalary: item['job-salary'],
-        jobSnippet: item['job-snippet'],
-        jobTitle: item['job-title'],
-        postDate: item['post-date'],
-      }));
-      dispatch(setCurrentJob(updatedData));
-    });
+    axios
+      .get(url)
+      .then((res) => {
+        const updatedData = res.data.map((item: any) => ({
+          companyLocation: item['company-location'],
+          companyName: item['company-name'],
+          companyRating: item['company-rating'],
+          jobLink: item['job-link'],
+          jobSalary: item['job-salary'],
+          jobSnippet: item['job-snippet'],
+          jobTitle: item['job-title'],
+          postDate: item['post-date'],
+        }));
+        dispatch(setCurrentJob(updatedData));
+      })
+      .catch((error) => console.log(error));
   };
 
   return (
